@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Cubicle</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+
+        <img class="logo" src="images/logo.png" alt="logo" />
+        <nav>
+          <a href="#" class="hide-desktop">
+            <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu" />
+          </a>
+          <ul class="show-desktop hide-mobile" id="nav">
+            <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <img src="images/cube.svg" alt="cube graphic" class="cube">
+        <h1>
+          Welcome to CUBICLE
+        </h1>
+        <p class="subheader">The worlds fastest hosting platform</p>
+        <img src="images/down arrow.svg" alt="scroll down" class="scroll hide-mobile show-desktop"> 
+      </section>
+      </div>
+      <div class="blue-container">
+        <div class="container">
+<ul>
+  <li>
+    <img src="images/server.svg" alt="server icon">
+    <p>Lorem ipsum dolor sit amet, consetetur </p>
+  </li>
+  <li>
+    <img src="images/ssd.svg" alt="server icon">
+    <p>Lorem ipsum dolor sit amet, consetetur </p>
+  </li>
+  <li>
+    <img src="images/speed.svg" alt="server icon">
+    <p>Lorem ipsum dolor sit amet, consetetur </p>
+  </li>
+</ul>
+        </div>
+      </div>
+
+      <div class="gray-container">
+        <div class="container">
+          <ul>
+            <li>
+              <figure>
+
+                <img src="images/user 1.png" alt="user testimonial picture">
+                <blockquote>Lorem ipsum dolor sit amet, consetetur</blockquote>
+                <figcaption>- Jane Doe</figcaption>
+              </figure></li>
+              <li><figure>
+
+                <img src="images/user 2.png" alt="user testimonial picture">
+                <blockquote>Lorem ipsum dolor sit amet, consetetur</blockquote>
+                <figcaption>- Joan Doe</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <h2>Start your free trial today!</h2>
+        <a href="#" class="cta">Get Started</a>
+      </div>
+      <footer>
+        <div class="footer-container">
+          <div class="container">
+            <a href="#">
+
+              <img class="logo" src="images/logo white.png" alt="logo">
+            </a>
+              <p class="address">1234 fake street, 12345<br>USA
+              </p>
+              <ul class="footer-links">
+                <li>
+                  <a href="#">Terms of Service</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+              </ul>
+            
+          </div>
+        </div>
+        
+      </footer>
+      <div class="dark-gray-container"></div>
+
+      <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e){
+          nav.classList.toggle('hide-mobile');
+          e.preventDefault();
+        });
+        exit.addEventListener('click', function(e){
+          nav.classList.add('hide-mobile');
+          e.preventDefault();
+        });
+      </script>
+  </body>
+</html>
